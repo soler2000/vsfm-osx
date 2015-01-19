@@ -22,8 +22,9 @@ scriptPath=${0%/*}
 source $scriptPath/common
 
 function make_sfm () {
-	VSFM_SRC=http://abstract.cs.washington.edu/~ccwu/vsfm/vsfm.cgi?mac64
+	VSFM_SRC=http://ccwu.me/vsfm/download/
 	VSFM_ZIP=VisualSFM_osx_64bit.zip
+	
 
 	if [ ! -e "${VSFM_ZIP}" ]; then
 		echo "Downloading vsfm"
